@@ -1,6 +1,10 @@
 let base = 6
 let altura = 9
 
+/*function areaTriangulo(base, altura){
+	return (base * altura) / 2
+}*/
+
 /*let areaTriangulo = function(base, altura){
 	return (base * altura) / 2
 }*/
