@@ -5,9 +5,11 @@ let altura = 9
 	return (base * altura) / 2
 }*/
 
-let areaTriangulo = (base, altura) => {
+/*let areaTriangulo = (base, altura) => {
 	return (base * altura) / 2
-}
+}*/
+
+let areaTriangulo = (base, altura) => (base * altura) / 2
 
 
 
