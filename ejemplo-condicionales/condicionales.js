@@ -11,7 +11,18 @@ const nombre03 = 'Leonel'
 const edad03 = 11
 
 
-function puedeVerPelicula(nombre, edad, estaConAdulto = false){
+/*function puedeVerPelicula(nombre, edad, estaConAdulto = false){
+	if(edad >= edadMinima){
+		alert(`${nombre}, puedes pasar a ver la película: ${pelicula}.`)
+	}else if(estaConAdulto){
+		alert(`${nombre}, puedes pasar a ver la película: ${pelicula}, aunque tu edad es ${edad} vienes acompañado de un adulto.`)		
+	}else{
+		alert(`${nombre}, no puedes pasar a ver la película ${pelicula}. \nLa edad minima para ver la película es ${edadMinima} años y tu tienes ${edad}.`)
+	}
+}*/
+
+
+const puedeVerPelicula = (nombre, edad, estaConAdulto = false) => {
 	if(edad >= edadMinima){
 		alert(`${nombre}, puedes pasar a ver la película: ${pelicula}.`)
 	}else if(estaConAdulto){
