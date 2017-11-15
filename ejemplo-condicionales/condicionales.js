@@ -11,7 +11,7 @@ const nombre03 = 'Leonel'
 const edad03 = 11
 
 
-function puedeVerPelicula(nombre, edad, estaConAdulto){
+function puedeVerPelicula(nombre, edad, estaConAdulto = false){
 	if(edad >= edadMinima){
 		alert(`${nombre}, puedes pasar a ver la película: ${pelicula}.`)
 	}else if(estaConAdulto){
