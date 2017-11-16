@@ -6,10 +6,18 @@ function platzom(str){
 		translation = str.slice(0, -2)
 	}
 
+
+	// Si la palabra termina con Z, se le añade "pe" al final.
+	if(str.toLowerCase().startsWith('z')){
+		translation += 'pe'
+	}
+
 	return translation
 }
 
 console.log(platzom("Programar")) // Program
+console.log(platzom("Zorro")) // Zorrope
+console.log(platzom("Zarpar")) // Zarppe
 
 /*
  	toLowerCase()	=>	Sirve para convertir una cadena de caracteres en minúsculas.
