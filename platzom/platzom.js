@@ -33,7 +33,7 @@ function platzom(str){
 		se tiene en cuenta y se devuelve la misma palabra intercalando
 		mayúsculas y minúsculas.  
 	*/
-	if(str == reverse(str)){
+	if(str.toLowerCase() == reverse(str).toLowerCase()){
 		return minMay(str)
 	}
 
@@ -67,7 +67,7 @@ console.log(platzom("Programar")) // Program
 console.log(platzom("Zorro")) // Zorrope
 console.log(platzom("Zarpar")) // Zarppe
 console.log(platzom("abecedario")) // abece-dario
-console.log(platzom("sometemos")) // SoMeTeMoS
+console.log(platzom("Sometemos")) // SoMeTeMoS
 
 /*
  	toLowerCase()	=>	Sirve para convertir una cadena de caracteres en minúsculas.
