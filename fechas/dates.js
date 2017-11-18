@@ -1,3 +1,27 @@
+const dias = [
+	'Domingo',
+	'Lunes',
+	'Martes',
+	'Miércoles',
+	'Jueves',
+	'Viernes',
+	'Sábado'
+]
+
+const meses = [
+	"Enero",
+	"Febrero",
+	"Marzo",
+	"Abril",
+	"Mayo",
+	"Junio",
+	"Julio",
+	"Agosto",
+	"Septiembre",
+	"Octubre",
+	"Noviembre",
+	"Diciembre"
+]
 /*
 	Creamos un objeto de tipo fecha, en este caso le estamos asignando
 	mi fecha de nacimiento, pero hay que tener en cuenta que en el caso
@@ -29,3 +53,7 @@ const tiempoYears = tiempoDias / 365
 	Proximo cumpleaños.
 */
 const proximoCumple = new Date(hoy.getFullYear(), nacimiento.getMonth(), nacimiento.getDate())
+const diaSemana  = dias[proximoCumple.getDay()]
+const diaMes = nacimiento.getDate()
+const mes = meses[nacimiento.getMonth()]
+console.log(`Proximo cumpleaños: ${diaSemana} ${diaMes} de ${mes}.`)
