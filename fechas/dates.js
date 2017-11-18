@@ -24,3 +24,8 @@ const tiempoMinutos = tiempoSegundos / 60
 const tiempoHoras = tiempoMinutos / 60
 const tiempoDias = tiempoHoras / 24
 const tiempoYears = tiempoDias / 365
+
+/*
+	Proximo cumpleaños.
+*/
+const proximoCumple = new Date(hoy.getFullYear(), nacimiento.getMonth(), nacimiento.getDate())
