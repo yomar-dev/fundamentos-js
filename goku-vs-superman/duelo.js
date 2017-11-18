@@ -14,11 +14,12 @@ let round = 0
 
 while(ambosSiguenVivos()){
 	round++
+	console.log(`***********************************************`)
 	console.log(`Round: ${round}`)
 
 	const golpeGoku = calcularGolpe()
 	const golpeSuperman = calcularGolpe()
-	
+
 	if(golpeGoku > golpeSuperman){
 		//Ataca Goku
 		console.log(`Goku ataca con un golpe de: ${golpeGoku}`)
@@ -32,9 +33,11 @@ while(ambosSiguenVivos()){
 	}
 }
 
+console.log(`***********************************************`)
 
 if(gokuSigueVivo()){
 	console.log(`Goku ganó la pelea, vida restante de Goku es ${vidaGoku}`)
 }else{
 	console.log(`Superman ganó la pelea, vida restante de Superman es ${vidaSuperman}`)	
 }
+console.log(`***********************************************`)
