@@ -8,6 +8,8 @@ const ambosSiguenVivos = () => vidaGoku > 0 && vidaSuperman > 0
 
 const calcularGolpe = () => Math.round(Math.random() * MAX_POWER - MIN_POWER) + MIN_POWER
 
+const gokuSigueVivo = () => vidaGoku > 0
+
 let round = 0
 
 while(ambosSiguenVivos()){
@@ -16,7 +18,7 @@ while(ambosSiguenVivos()){
 
 	const golpeGoku = calcularGolpe()
 	const golpeSuperman = calcularGolpe()
-
+	
 	if(golpeGoku > golpeSuperman){
 		//Ataca Goku
 		console.log(`Goku ataca con un golpe de: ${golpeGoku}`)
@@ -28,4 +30,11 @@ while(ambosSiguenVivos()){
 		vidaGoku -= golpeSuperman
 		console.log(`Vida Goku: ${vidaGoku}`)		
 	}
+}
+
+
+if(gokuSigueVivo()){
+	console.log(`Goku ganó la pelea, vida restante de Goku es ${vidaGoku}`)
+}else{
+	console.log(`Superman ganó la pelea, vida restante de Superman es ${vidaSuperman}`)	
 }
