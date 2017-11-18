@@ -6,3 +6,16 @@
 	el mes 11. 
 */
 const nacimiento = new Date(1992, 11, 30)
+
+/*
+	En esta constante almacenamos la fecha actual.
+*/
+const hoy  = new Date()
+
+/*
+	En esta constante almacenamos el tiempo que ha transcurrido desde
+	mi nacimiento hasta el día de hoy.
+	Nota: El valor devuelto es en milisegundos, así que nos toca realizar
+	la conversión.
+*/
+const tiempo = hoy - nacimiento
