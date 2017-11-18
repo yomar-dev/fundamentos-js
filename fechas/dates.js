@@ -19,3 +19,8 @@ const hoy  = new Date()
 	la conversión.
 */
 const tiempo = hoy - nacimiento
+const tiempoSegundos = tiempo / 1000
+const tiempoMinutos = tiempoSegundos / 60
+const tiempoHoras = tiempoMinutos / 60
+const tiempoDias = tiempoHoras / 24
+const tiempoYears = tiempoDias / 365
