@@ -18,7 +18,10 @@ function distancia(p1, p2){
 	const x = p1.x - p2.x
 	const y = p1.y - p2.y
 
-	return Math.sqrt((x * x) + (y * y))	
+	return Math.sqrt((x * x) + (y * y)).toFixed(2)	
 }
+
+p1.moverEnX(7)
+p2.moverEnY(-2)
 
 console.log(distancia(p1, p2))
