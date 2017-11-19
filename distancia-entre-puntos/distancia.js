@@ -2,16 +2,28 @@
 const p1 = {
 	x: 0,
 	y: 4,
-	moverEnX: function(x){ this.x += x},
-	moverEnY: function(y){ this.y += y}
+	//moverEnX: function(x){ this.x += x},
+	//moverEnY: function(y){ this.y += y}
+	moverEnX(x){
+		this.x += x
+	},
+	moverEnY(y){
+		this.y += y
+	}
 }
 
 /* Punto 2 */
 const p2 = {
 	x: 3,
 	y: 0,
-	moverEnX: function(x){ this.x += x},
-	moverEnY: function(y){ this.y += y}
+	//moverEnX: function(x){ this.x += x},
+	//moverEnY: function(y){ this.y += y}
+	moverEnX(x){
+		this.x += x
+	},
+	moverEnY(y){
+		this.y += y
+	}
 }
 
 function distancia(p1, p2){
