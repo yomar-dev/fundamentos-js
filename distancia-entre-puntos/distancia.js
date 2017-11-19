@@ -1,5 +1,5 @@
 /* Punto 1 */
-const p1 = {
+/*const p1 = {
 	x: 0,
 	y: 4,
 	//moverEnX: function(x){ this.x += x},
@@ -10,10 +10,10 @@ const p1 = {
 	moverEnY(y){
 		this.y += y
 	}
-}
+}*/
 
 /* Punto 2 */
-const p2 = {
+/*const p2 = {
 	x: 3,
 	y: 0,
 	//moverEnX: function(x){ this.x += x},
@@ -24,7 +24,15 @@ const p2 = {
 	moverEnY(y){
 		this.y += y
 	}
+}*/
+
+function Punto(x, y){
+	this.x = x
+	this.y = y
 }
+
+const p1 = new Punto(0, 4)
+const p2 = new Punto(3, 0)
 
 function distancia(p1, p2){
 	const x = p1.x - p2.x
