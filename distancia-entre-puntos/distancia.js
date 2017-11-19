@@ -39,17 +39,17 @@ Punto.prototype.moverEnY = function moverEnY(y) {
 	this.y += y
 }
 
-const p1 = new Punto(0, 4)
-const p2 = new Punto(3, 0)
-
-function distancia(p1, p2){
-	const x = p1.x - p2.x
-	const y = p1.y - p2.y
+Punto.prototype.distancia = function distancia(p){
+	const x = this.x - p.x
+	const y = this.y - p.y
 
 	return Math.sqrt((x * x) + (y * y)).toFixed(2)	
 }
 
+const p1 = new Punto(0, 4)
+const p2 = new Punto(3, 0)
+
 p1.moverEnX(7)
 p2.moverEnY(-2)
 
-console.log(distancia(p1, p2))
+console.log(p1.distancia(p2))
