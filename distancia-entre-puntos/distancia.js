@@ -31,6 +31,14 @@ function Punto(x, y){
 	this.y = y
 }
 
+Punto.prototype.moverEnX = function moverEnX(x) {
+	this.x += x
+}
+
+Punto.prototype.moverEnY = function moverEnY(y) {
+	this.y += y
+}
+
 const p1 = new Punto(0, 4)
 const p2 = new Punto(3, 0)
 
