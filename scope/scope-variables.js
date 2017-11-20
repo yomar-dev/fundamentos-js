@@ -29,8 +29,28 @@ var nombre = "Yomar"
 	valor de la variable nombre que se encuentra por fuera y ambos mensajes mostrarian
 	el mismo valor (Erick).
 */
-function saludar(){
+/*function saludar(){
 	var nombre = "Erick"
+	console.log(`Hola ${nombre}`)
+}*/
+
+
+/*
+	En este caso sigue ocurriendo lo mismo de arriba ya que, en este caso Javascript
+	lo interpreta de la siguiente manera: 
+	Ej:
+	function saludar(){
+		var nombre
+		if(true){
+			nombre = "Erick"
+		}
+		console.log(`Hola ${nombre}`)
+	}
+*/
+function saludar(){
+	if(true){
+		var nombre = "Erick"
+	}
 	console.log(`Hola ${nombre}`)
 }
 
