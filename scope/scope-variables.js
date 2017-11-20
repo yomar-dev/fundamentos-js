@@ -47,7 +47,7 @@ var nombre = "Yomar"
 		console.log(`Hola ${nombre}`)
 	}
 */
-function saludar(){
+/*function saludar(){
 	if(true){
 		var nombre = "Erick"
 	}
@@ -56,3 +56,13 @@ function saludar(){
 
 saludar()
 console.log(`El valor de la variable nombre es: ${nombre}`)
+*/
+
+function saludar10V1(nombre){
+	for (var i = 0; i < 10; i++) {
+		console.log(`${i} - Hola ${nombre}`)
+	}
+	console.log(`El valor de i es: ${i}`)
+}
+
+saludar10V1("Yomar")
