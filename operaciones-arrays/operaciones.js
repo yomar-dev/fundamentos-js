@@ -38,4 +38,19 @@ function sumar(...numeros){
 	return resultado
 }
 
+
+/*
+	Función para devolver un Array con el doble de los números pasados
+	por parametro, es decir: N * 2.
+*/
+function dobles(...numeros){
+	const resultado = []
+	for (var i = 0; i < numeros.length; i++) {
+		resultado.push(numeros[i] * 2)
+	}
+	return resultado
+}
+
+
 sumar(2, 5, 8, 9, 14)
+dobles(2, 5, 8, 9, 14)
