@@ -53,7 +53,7 @@ function sumar(...numeros){
 function dobles(...numeros){
 	// Forma 1.
 	/*const resultado = []
-	for (var i = 0; i < numeros.length; i++) {
+	for (let i = 0; i < numeros.length; i++) {
 		resultado.push(numeros[i] * 2)
 	}
 	return resultado*/
@@ -78,6 +78,21 @@ function dobles(...numeros){
 	const dobles = (...numeros) => numeros.map(numero => numero * 2 )
 */
 
+/*
+	Función para devolver un Array con los números pares recibidos por parametro.
+*/
+function pares(...numeros){
+	// Devolver un Array con los números pares utilizando un ciclo 'for'.
+	const resultado = []
+	for (let i = 0; i < numeros.length; i++) {
+		if(numeros[i] % 2 == 0){
+			resultado.push(numeros[i])
+		}
+	}
+	return resultado
+}
+
 
 sumar(2, 5, 8, 9, 14)
 dobles(2, 5, 8, 9, 14)
+pares(2, 5, 8, 9, 14)
