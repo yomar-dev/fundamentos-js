@@ -72,6 +72,12 @@ function dobles(...numeros){
 	return numeros.map(numero => numero * 2 )
 }
 
+/*
+	Esta es otra forma de realizar lo mismo que hace la función
+	de arriba utilizando nuevamente Arrow Function.
+	const dobles = (...numeros) => numeros.map(numero => numero * 2 )
+*/
+
 
 sumar(2, 5, 8, 9, 14)
 dobles(2, 5, 8, 9, 14)
