@@ -23,10 +23,19 @@
 	array (de izquierda a derecha) para reducirlo a un único valor.
 */
 function sumar(...numeros){
-	return numeros.reduce(function(total, numero){
+	// Forma 1.
+	/*return numeros.reduce(function(total, numero){
+		total += numero
+		return total
+	}, 0)*/
+
+	// Forma 2.
+	const resultado =  numeros.reduce(function(total, numero){
 		total += numero
 		return total
 	}, 0)
+
+	return resultado
 }
 
 sumar(2, 5, 8, 9, 14)
