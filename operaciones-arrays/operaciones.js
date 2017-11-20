@@ -59,9 +59,17 @@ function dobles(...numeros){
 	return resultado*/
 
 	// Forma 2.
-	return numeros.map(function(numero){
+	/*return numeros.map(function(numero){
 		return numero * 2
-	})
+	})*/
+
+	// Forma 3. Utilizando Arrow Function.
+	/*return numeros.map(numero => {
+		return numero * 2
+	})*/
+
+	// Forma 4. Utilizando Arrow Function 2.
+	return numeros.map(numero => numero * 2 )
 }
 
 
