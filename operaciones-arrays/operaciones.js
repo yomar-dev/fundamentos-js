@@ -9,7 +9,11 @@
 	de 'numeros' podemos observar que nos devuelve un Array
 */
 function sumar(...numeros){
-	console.log(numeros)
+	let total = 0
+	for (let i = 0; i < numeros.length; i++) {
+		total += numeros[i]
+	}
+	return total;
 }
 
 sumar(2, 5, 8, 9, 14)
