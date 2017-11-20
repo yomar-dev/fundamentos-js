@@ -92,11 +92,26 @@ function pares(...numeros){
 		}
 	}
 	return resultado*/
-
-	return numeros.filter(function(numero) {
+	// Forma 2.
+	/*return numeros.filter(function(numero) {
 		return numero % 2 == 0
-	});
+	});*/
+
+
+	// Forma 3.
+	/*return numeros.filter((numero) => {
+		return numero % 2 == 0
+	})*/
+
+	// Forma 4.
+	return numeros.filter((numero) => numero % 2 == 0)
 }
+
+/*
+	Esta es otra forma de realizar lo mismo que hace la función
+	de arriba utilizando nuevamente Arrow Function.
+	const pares = (...numeros) => numeros.filter((numero) => numero % 2 == 0)
+*/
 
 
 sumar(2, 5, 8, 9, 14)
