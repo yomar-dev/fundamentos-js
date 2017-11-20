@@ -80,16 +80,22 @@ function dobles(...numeros){
 
 /*
 	Función para devolver un Array con los números pares recibidos por parametro.
+	filter()	=>	Crea un nuevo array con todos los elementos que cumplan la 
+	condición implementada por la función dada.
 */
 function pares(...numeros){
 	// Devolver un Array con los números pares utilizando un ciclo 'for'.
-	const resultado = []
+	/*const resultado = []
 	for (let i = 0; i < numeros.length; i++) {
 		if(numeros[i] % 2 == 0){
 			resultado.push(numeros[i])
 		}
 	}
-	return resultado
+	return resultado*/
+
+	return numeros.filter(function(numero) {
+		return numero % 2 == 0
+	});
 }
 
 
