@@ -22,3 +22,4 @@ function saludar(nombre){
 }
 
 saludar("Erick")
+console.log(`El valor de la variable nombre es: ${nombre}`)
