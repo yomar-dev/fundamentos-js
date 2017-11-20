@@ -17,9 +17,22 @@ var nombre = "Yomar"
 	de la variable nombre que se encuentra por fuera sino el valor de la
 	variable que se le pase por parametro.
 */
-function saludar(nombre){
+/*function saludar(nombre){
+	console.log(`Hola ${nombre}`)
+}*/
+
+/*
+	De esta forma ocurre lo mismo de arriba, en este caso se va a mostrar el
+	valor de la variable que se encuentra dentro de la función y no afecta el
+	valor de la variable que se encuentra por fuera, pero si en vez de escribir
+	"var nombre = 'Erick'", escribimos "nombre = 'Erick'"" estariamos cambiando el
+	valor de la variable nombre que se encuentra por fuera y ambos mensajes mostrarian
+	el mismo valor (Erick).
+*/
+function saludar(){
+	var nombre = "Erick"
 	console.log(`Hola ${nombre}`)
 }
 
-saludar("Erick")
+saludar()
 console.log(`El valor de la variable nombre es: ${nombre}`)
