@@ -42,13 +42,26 @@ function sumar(...numeros){
 /*
 	Función para devolver un Array con el doble de los números pasados
 	por parametro, es decir: N * 2.
+	push()	=>	Agrega uno o más elementos al final de un array y devuelve
+	la nueva longitud del array.
+	map()	=>	Crea un nuevo array con los resultados de la llamada a la 
+	función indicada aplicados a cada uno de sus elementos.
+	
+	Nota: Podemos decir que 'map()' recibe una función que va a ejecutar
+	por cada uno de los elementos del Array.
 */
 function dobles(...numeros){
-	const resultado = []
+	// Forma 1.
+	/*const resultado = []
 	for (var i = 0; i < numeros.length; i++) {
 		resultado.push(numeros[i] * 2)
 	}
-	return resultado
+	return resultado*/
+
+	// Forma 2.
+	return numeros.map(function(numero){
+		return numero * 2
+	})
 }
 
 
