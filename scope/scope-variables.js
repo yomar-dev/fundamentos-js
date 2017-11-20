@@ -65,4 +65,13 @@ function saludar10V1(nombre){
 	console.log(`El valor de i es: ${i}`)
 }
 
+
+function saludar10V2(nombre){
+	for (let i = 0; i < 10; i++) {
+		console.log(`${i} - Hola ${nombre}`)
+	}
+	console.log(`El valor de i es: ${i}`)
+}
+
 saludar10V1("Yomar")
+saludar10V2("Erick")
