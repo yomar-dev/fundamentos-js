@@ -27,9 +27,26 @@ class Persona{
 		 */
 		
 		// Solución 2.
-		this.amigos.forEach(function(amigo) {
+		/*this.amigos.forEach(function(amigo) {
 			console.log(`Hola mi nombre es ${this.nombre} y soy amigo de ${amigo}`)
-		}.bind(this))
+		}.bind(this))*/
+
+		
+		/**
+		 *	Para darle solución de una manera mucho más sencilla podemos utilizar
+		 *	Arrow Functions, que en este caso no tenemos que crear variables dentro de
+		 *	la función que recuerden a 'this' ni utilizar el metodo 'bind()' ya que
+		 *	de este manera Javascript hace el 'bind()' automaticamente.
+		 *	
+		 *	Nota: Cuando definimos una Arrow Function, dentro del cuerpo de esa función
+		 *	'this' va a tomar el valor que tiene 'this' fuera del contexto en el cual
+		 *	fue declarada esa función.
+		 */
+		
+		// Solución 3.
+		this.amigos.forEach((amigo) => {
+			console.log(`Hola mi nombre es ${this.nombre} y soy amigo de ${amigo}`)
+		})
 	}
 }
 
