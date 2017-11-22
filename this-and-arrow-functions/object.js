@@ -12,10 +12,24 @@ class Persona{
 		 *	caso 'listarAmigos()' que haga referencia al objeto 'this' de la clase 
 		 *	'Persona'.
 		 */
-		const _this = this
+		
+		// Solución 1.
+		/*const _this = this
 		this.amigos.forEach(function(amigo) {
 			console.log(`Hola mi nombre es ${_this.nombre} y soy amigo de ${amigo}`)
-		})
+		})*/
+
+		
+		/**
+		 *	En esta ocasión utilizamos el metodo 'bind()' para poder tener acceso
+		 *	a 'this' dentro del forEach, de esta manera no tenemos que crear una
+		 *	nueva variable dentro de la función que haga referencia a 'this'.
+		 */
+		
+		// Solución 2.
+		this.amigos.forEach(function(amigo) {
+			console.log(`Hola mi nombre es ${this.nombre} y soy amigo de ${amigo}`)
+		}.bind(this))
 	}
 }
 
