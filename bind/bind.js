@@ -7,14 +7,14 @@ class Toggable{
 		this.element = element
 		this.element.innerHTML = 'Off'
 		this.activated = false
-		this.element.addEventListener('click', this.onClick);
+		this.element.addEventListener('click', this.onClick.bind(this))
 	}
 
 	/**
 	 * Cambiar el estado interno y llamar a toggleText().
 	 */
 	onClick(){
-		console.log("Hello World!!")
+		console.log('Valor de this en onClick ', this)
 		this.activated = !this.activated
 		this.toggleText()
 	}
