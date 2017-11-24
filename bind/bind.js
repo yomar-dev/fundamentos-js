@@ -21,6 +21,6 @@ class Toggable{
 	 * Cambiar texto.
 	 */
 	toggleText(){
-
+		this.element.innerHTML = this.activated ? 'On' : 'Off'
 	}
 }
