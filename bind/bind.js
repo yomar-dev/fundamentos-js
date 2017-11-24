@@ -14,7 +14,6 @@ class Toggable{
 	 * Cambiar el estado interno y llamar a toggleText().
 	 */
 	onClick(){
-		console.log('Valor de this en onClick ', this)
 		this.activated = !this.activated
 		this.toggleText()
 	}
