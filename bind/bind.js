@@ -14,6 +14,7 @@ class Toggable{
 	 * Cambiar el estado interno y llamar a toggleText().
 	 */
 	onClick(){
+		console.log("Hello World!!")
 		this.activated = !this.activated
 		this.toggleText()
 	}
@@ -25,3 +26,7 @@ class Toggable{
 		this.element.innerHTML = this.activated ? 'On' : 'Off'
 	}
 }
+
+
+const button = document.getElementById('boton')
+const miBoton = new Toggable(button)
