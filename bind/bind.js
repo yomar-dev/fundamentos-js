@@ -13,7 +13,8 @@ class Toggable{
 	 * Cambiar el estado interno y llamar a toggleText().
 	 */
 	onClick(){
-		
+		this.activated = !this.activated
+		this.toggleText()
 	}
 
 	/**
