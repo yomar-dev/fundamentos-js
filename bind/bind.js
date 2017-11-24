@@ -7,6 +7,7 @@ class Toggable{
 		this.element = element
 		this.element.innerHTML = 'Off'
 		this.activated = false
+		this.element.addEventListener('click', this.onClick);
 	}
 
 	/**
