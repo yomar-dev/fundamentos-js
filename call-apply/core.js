@@ -19,4 +19,6 @@ saludar.call(yomar, 5)
  * apply()	=>	Invoca una determinada función asignando explícitamente
  * el objeto this y un array como parámetros para dicha función.
  */
+const parametros = [5]
 saludar.apply(yomar, [5])
+saludar.call(yomar, ...parametros)
