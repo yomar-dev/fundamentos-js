@@ -1,5 +1,5 @@
 setTimeout(function callback(){
-  console.log(`Ya pasaron 5 segundos.`)
-}, 5000)
+  console.log(`A`)
+}, 0)
 
-console.log(`Hello World!!`)
+console.log(`B`)
